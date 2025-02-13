@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtPlay</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to ArtPlay</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#virtual-store">Virtual Store</a></li>
+                <li><a href="#about" id="about-link">About Me</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <p>Step into the world of my art. Explore a universe of creativity, where every piece tells a story. From vibrant digital art to timeless traditional masterpieces, immerse yourself in a journey of color, emotion, and imagination.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="artwork">
+            <img src="assets/images/art1.jpg" alt="Artwork 1" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 1</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art2.jpg" alt="Artwork 2" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 2</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art3.jpg" alt="Artwork 3" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 3</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art4.jpg" alt="Artwork 4" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 4</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art5.jpg" alt="Artwork 5" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 5</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art6.jpg" alt="Artwork 6" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 6</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art7.jpg" alt="Artwork 7" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 7</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art8.jpg" alt="Artwork 8" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 8</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art9.jpg" alt="Artwork 9" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 9</h3>
+            </div>
+        </div>
+        <div class="artwork">
+            <img src="assets/images/art10.jpg" alt="Artwork 10" class="art-image">
+            <div class="art-details">
+                <h3>Artwork 10</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Store -->
+    <section id="virtual-store">
+        <h2>Virtual Store</h2>
+        <!-- Drag and Drop Zone -->
+        <div id="drag-drop-zone">
+            <p>Drag and drop images here to add them to the virtual store!</p>
+        </div>
+        <!-- 360° View Container -->
+        <div id="threejs-container"></div>
+        <!-- Maximize/Minimize Buttons -->
+        <div id="view-controls">
+            <button id="maximize-btn">Maximize</button>
+            <button id="minimize-btn">Minimize</button>
+        </div>
+        <!-- Clear Images Button -->
+        <button id="clear-images-btn">Clear All Images</button>
+    </section>
+
+    <!-- About Me (Hidden by Default) -->
+    <section id="about" class="hidden">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Your Name], a passionate artist creating unique digital and traditional art. Welcome to my world of creativity!</p>
+    </section>
+
+    <!-- Contact (Hidden by Default) -->
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by <strong>Kofi Fosu</strong></p>
+        <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>&copy; 2025 ArtPlay. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
